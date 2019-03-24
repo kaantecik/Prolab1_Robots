@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="662.0" prefWidth="933.0" style="-fx-background-color: rgb(116, 185, 255);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ThirdProbGrid.ThirdProbController">
+   <children>
+      <Pane layoutY="-7.0" prefHeight="669.0" prefWidth="406.0" style="-fx-background-color: #e17055;">
+         <children>
+            <GridPane gridLinesVisible="true" layoutY="7.0" prefHeight="662.0" prefWidth="406.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="72.0" prefWidth="168.0" text="Gezgin Tipi" GridPane.rowIndex="1" />
+                  <Label prefHeight="74.0" prefWidth="166.0" text="Manipülatör Tipi" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextArea fx:id="ayakSayısı" prefHeight="200.0" prefWidth="200.0" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label prefHeight="72.0" prefWidth="132.0" text="Kol Uzunluğu[m]" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <TextArea fx:id="kolUzunluğu" prefHeight="29.0" prefWidth="101.0" promptText="0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Label prefHeight="78.0" prefWidth="125.0" text="Kapasite" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <Label prefHeight="83.0" prefWidth="129.0" text="Yük Miktarı" GridPane.rowIndex="6" />
+                  <Label prefHeight="82.0" prefWidth="140.0" text="Sabitleme Süresi" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                  <Label prefHeight="80.0" prefWidth="134.0" text="Geçiş Süresi" GridPane.rowIndex="11" />
+                  <Label prefHeight="91.0" prefWidth="144.0" text="Engel Sayısı" GridPane.rowIndex="13" />
+                  <Label prefHeight="66.0" prefWidth="127.0" text="Motor Sayısı" GridPane.rowIndex="12" />
+                  <Label prefHeight="65.0" prefWidth="132.0" text="Robotun Konumu" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                  <TextArea fx:id="sizeText" prefHeight="200.0" prefWidth="200.0" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                  <TextArea fx:id="kapasite" prefHeight="200.0" prefWidth="200.0" promptText="0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <TextArea fx:id="yükMiktarı" prefHeight="200.0" prefWidth="200.0" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextArea fx:id="sabitlemeSüresi" prefHeight="51.0" prefWidth="86.0" promptText="0" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+                  <TextArea fx:id="geçişSüresi" prefHeight="200.0" prefWidth="200.0" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <TextArea fx:id="motorSayısı" prefHeight="200.0" prefWidth="200.0" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <TextArea fx:id="konumX" prefHeight="200.0" prefWidth="200.0" promptText="x" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+                  <TextArea fx:id="konumY" prefHeight="200.0" prefWidth="200.0" promptText="y" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+                  <Label prefHeight="58.0" prefWidth="125.0" text="Toplam Süre" GridPane.rowIndex="14" />
+                  <Label prefHeight="53.0" prefWidth="107.0" text="Gezinme Hızı" GridPane.rowIndex="5" />
+                  <TextArea fx:id="taşımaHızı" prefHeight="200.0" prefWidth="200.0" promptText="0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <TextArea fx:id="yukarı" prefHeight="200.0" prefWidth="200.0" promptText="Yukarı" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                  <TextArea fx:id="aşağı" prefHeight="200.0" prefWidth="200.0" promptText="Aşağı" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                  <TextArea fx:id="sağa" prefHeight="200.0" prefWidth="200.0" promptText="Sağa" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                  <TextArea fx:id="sola" prefHeight="200.0" prefWidth="200.0" promptText="Sola" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                  <Label prefHeight="56.0" prefWidth="104.0" text="Talimatlar(Yukarı,&#10;Sağa,Aşağı,Sola)" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <Label fx:id="GezginAyakSayısıText" prefHeight="75.0" prefWidth="131.0" text="Tekerlek,Palet &#10;veya Bacak Sayısı" GridPane.rowIndex="4" />
+                  <Label prefHeight="47.0" prefWidth="106.0" text="Manipülatör Kısmı" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="214.0" layoutY="202.0" prefHeight="55.0" prefWidth="130.0" text="Gezgin Kısmı">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="154.0" prefHeight="53.0" prefWidth="107.0" text="Taşıma Hızı" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <TextArea fx:id="gezinmeHızı" layoutX="315.0" layoutY="106.0" prefHeight="52.0" prefWidth="115.0" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label layoutX="214.0" layoutY="249.0" prefHeight="56.0" prefWidth="104.0" text="Talimatlar(Yukarı,&#10;Sağa,Aşağı,Sola)" GridPane.rowIndex="7" />
+                  <TextArea fx:id="solaK" layoutX="315.0" layoutY="390.0" prefHeight="200.0" prefWidth="200.0" promptText="Sola" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <TextArea fx:id="aşağıK" layoutX="315.0" layoutY="296.0" prefHeight="200.0" prefWidth="200.0" promptText="Aşağı" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <TextArea fx:id="sağaK" layoutX="315.0" layoutY="343.0" prefHeight="200.0" prefWidth="200.0" promptText="Sağa" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <TextArea fx:id="yukarıK" layoutX="315.0" layoutY="249.0" prefHeight="200.0" prefWidth="200.0" promptText="Yukarı" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label layoutX="214.0" layoutY="484.0" prefHeight="65.0" prefWidth="132.0" text="Son Konum[Robot]" GridPane.rowIndex="15">
+                     <font>
+                        <Font size="11.0" />
+                     </font></Label>
+                  <Label layoutX="10.0" layoutY="549.0" prefHeight="65.0" prefWidth="132.0" text="Son Konum[Yük]" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+                  <Label layoutX="10.0" layoutY="452.0" prefHeight="66.0" prefWidth="127.0" text="Motor Sayısı" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                  <TextArea fx:id="manipMotorSayısı" layoutX="112.0" layoutY="452.0" prefHeight="200.0" prefWidth="200.0" promptText="0" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+                  <Label fx:id="sonKonumX" alignment="CENTER" prefHeight="54.0" prefWidth="106.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                  <Label fx:id="sonKonumY" alignment="CENTER" prefHeight="55.0" prefWidth="105.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                  <Label fx:id="ManipSonKonumX" alignment="CENTER" prefHeight="55.0" prefWidth="104.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="15" />
+                  <Label fx:id="ManipSonKonumY" alignment="CENTER" prefHeight="47.0" prefWidth="107.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+                  <Label fx:id="toplamSüre" alignment="CENTER" prefHeight="64.0" prefWidth="104.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                  <RadioButton fx:id="ParalelButton" mnemonicParsing="false" onAction="#ButonKontrol" text="Paralel" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="SeriButton" mnemonicParsing="false" onAction="#ButonKontrol" text="Seri" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <RadioButton fx:id="TekerlekliButton" mnemonicParsing="false" onAction="#GezginButonKontrol" text="Tekerlekli" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="PaletliButton" mnemonicParsing="false" onAction="#GezginButonKontrol" text="Paletli" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <RadioButton fx:id="SpiderButton" mnemonicParsing="false" onAction="#GezginButonKontrol" text="Spider" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <GridPane fx:id="myGrid" gridLinesVisible="true" layoutX="407.0" layoutY="154.0" prefHeight="508.0" prefWidth="526.0" style="-fx-background-color: #0984e3;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Pane layoutX="407.0" layoutY="77.0" prefHeight="77.0" prefWidth="526.0" style="-fx-background-color: #2d3436;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d63031" height="20.0" layoutX="2.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+            <Label layoutX="26.0" layoutY="1.0" prefHeight="27.0" prefWidth="36.0" text="Engel" textFill="#d63031" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#23c459" height="20.0" layoutX="58.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+            <Label layoutX="82.0" layoutY="1.0" prefHeight="27.0" prefWidth="24.0" text="Yük" textFill="#23c459" />
+            <Label layoutX="23.0" layoutY="39.0" prefHeight="27.0" prefWidth="36.0" text="Seri" textFill="#ffeaa7" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffeaa7" height="20.0" layoutX="-1.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a29bfe" height="20.0" layoutX="57.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+            <Label layoutX="81.0" layoutY="39.0" prefHeight="27.0" prefWidth="54.0" text="Paralel" textFill="#a29bfe" />
+            <Label layoutX="146.0" layoutY="39.0" prefHeight="27.0" prefWidth="36.0" text="Spider" textFill="#a8faff" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a8faff" height="20.0" layoutX="122.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f89cfc" height="20.0" layoutX="180.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+            <Label layoutX="204.0" layoutY="39.0" prefHeight="27.0" prefWidth="54.0" text="Tekerlekli" textFill="#f89cfc" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fab1a0" height="20.0" layoutX="105.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+            <Label layoutX="129.0" layoutY="1.0" prefHeight="27.0" prefWidth="36.0" text="Paletli" textFill="#fab1a0" />
+            <Button fx:id="AnaMenüButton1" layoutX="420.0" layoutY="5.0" mnemonicParsing="false" onAction="#anaMenüAç" prefHeight="67.0" prefWidth="99.0" style="-fx-background-color: #25a2fb; -fx-background-radius: 10;" text="Ana Menü">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#31d2d4" height="20.0" layoutX="165.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+            <Label layoutX="189.0" layoutY="1.0" prefHeight="27.0" prefWidth="63.0" text="Son Konum" textFill="#31d2d4" />
+         </children>
+      </Pane>
+      <Button fx:id="onay" layoutX="407.0" mnemonicParsing="false" onAction="#EngelleriAl" prefHeight="77.0" prefWidth="151.0" style="-fx-background-color: #55efc4;" text="Engelleri&#10;Yerleştir">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <ToggleButton fx:id="DoneButton" layoutX="764.0" mnemonicParsing="false" onAction="#GetValues" prefHeight="34.0" prefWidth="169.0" style="-fx-background-color: #ffeaa7;" text="Gezgini Hareket Ettir">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </ToggleButton>
+      <Label alignment="CENTER" layoutX="558.0" prefHeight="77.0" prefWidth="206.0" style="-fx-background-color: #2d3436;" text="3.Problem&#10;Simülasyon Ekranı" textAlignment="CENTER" textFill="#00b894">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="SimulateButton" layoutX="764.0" layoutY="38.0" mnemonicParsing="false" onAction="#Simulate" prefHeight="39.0" prefWidth="169.0" style="-fx-background-color: #ffeaa7;" text="Manipülatörü Hareket Ettir">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

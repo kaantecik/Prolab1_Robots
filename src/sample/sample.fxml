@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00b894;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="150" mnemonicParsing="false" prefHeight="151.0" prefWidth="456.0" style="-fx-background-color: black;" text="Programlama Laboratuvarı&#10;3.Proje&#10;170201069-170201073&#10;Kaan Tecik-Eren Samet Karatas&#10;" textAlignment="CENTER" textFill="#00b894">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="21.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="200.0" layoutY="175.0" prefHeight="50" prefWidth="200" text="Problemi Seçiniz:" textAlignment="CENTER">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="23.0" />
+         </font>
+
+      </Label>
+      <Button fx:id="ProbTwo" layoutX="250.0" layoutY="300.0" mnemonicParsing="false" onAction="#OPTwo" prefHeight="50" prefWidth="100" style="-fx-background-color: black;" text="Problem-2" textFill="#00b894">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="ProbThree" layoutX="416.0" layoutY="300.0" mnemonicParsing="false" onAction="#OPThree" prefHeight="50" prefWidth="100" style="-fx-background-color: black;" text="Problem-3" textFill="#00b894">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="ProbOne" layoutX="76.0" layoutY="300.0" mnemonicParsing="false" onAction="#OPOne" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: black;" text="Problem-1" textAlignment="CENTER" textFill="#00b894">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="151.0" fitWidth="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/indir.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
